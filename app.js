@@ -13,7 +13,7 @@ const passport   = require('passport');
 const cors = require('cors');
 
 const mongoose = require('mongoose');
-require('dotenv').load();
+require('dotenv').config();
 mongoose.connect(process.env.MONGODB_URI);
 
 const passportSetup = require('./config/passport');
